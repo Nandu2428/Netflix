@@ -56,7 +56,7 @@ const Header = () => {
       }
     });
     return (() => unsubscribe());
-  }, []);
+  });
 
   return (
     <div className="absolute w-screen px-10 py-3 bg-gradient-to-b from-black z-10 flex flex-row justify-center md:flex-row justify-between ">

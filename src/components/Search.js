@@ -6,7 +6,7 @@ const Search = () => {
     return (
       <div>
         <div className="absolute -z-10">
-          <img src={background} alt="image" className="h-screen object-cover md:w-screen"></img>
+          <img src={background} alt="back" className="h-screen object-cover md:w-screen"></img>
         </div>
         <div className="pt-[30%] md:pt-0">
           <SearchBar />

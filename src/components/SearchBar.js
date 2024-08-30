@@ -1,9 +1,8 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch} from "react-redux";
 import { API_OPTIONS } from "../utils/constants";
 import lang from "../utils/langConfig";
-import { useRef, useSyncExternalStore } from "react";
+import { useRef} from "react";
 import { addSearchedMovies } from "../utils/moviesSlice";
-import MovieList from "./MovieList";
 
 const SearchBar = () => {
    

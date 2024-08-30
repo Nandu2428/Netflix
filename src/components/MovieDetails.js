@@ -18,7 +18,7 @@ const MovieDetails = () => {
     }
     useEffect(() => {
         fetchData();
-    }, []);
+    });
     console.log(details);
     if (!details) return null;
     const { title, overview, tagline, release_date, backdrop_path, genres, vote_average } = details;
@@ -28,7 +28,7 @@ const MovieDetails = () => {
     return (
       <div className="h-screen bg-[#192e4e] sm:pb-10 bg-[#192e4e] md:h-fit w-screen bg-[#192e4e]">
         <img
-          alt="image of poster"
+          alt="poster"
           src={IMAGE_URL + backdrop_path}
           className="absolute h-fit w-screen -z-1 bg-no-repeat bg-cover opacity-[0.1]"
         ></img>
@@ -38,7 +38,7 @@ const MovieDetails = () => {
         <div className="flex">
           <div className="relative mt-10 ml-10 pb-36 w-3/5">
             
-            <img alt="image of poster" src={IMAGE_URL + poster_path}></img>
+            <img alt="poster" src={IMAGE_URL + poster_path}></img>
           </div>
           <div className="relative mt-36 ml-8 text-white">
             <h1 className="font-bold text-3xl">{title}</h1>
